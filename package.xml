@@ -1,22 +1,23 @@
 <?xml version="1.0"?>
 <package>
-    <name>hankeme_cookiepolicy</name>
-    <version>0.1.0</version>
+    <name>Hankeme_Cookiepolicy</name>
+    <version>0.1.1</version>
     <stability>stable</stability>
-    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
+    <license uri="http://www.gnu.org/licenses/gpl.html">GPL v3</license>
     <channel>community</channel>
     <extends/>
-    <summary>Adds Info Layers about Site Cookies according to European Laws  (E-Privacy 2002/58/EG)</summary>
-    <description>This Extension adds Info Layers about Site Cookies according to European Laws (E-Privacy 2002/58/EG). Settings allow Users to either 'opt-in' or 'opt-out' to the Acceptance of Cookies.&#xD;
+    <summary>Adds Info Layers about Site Cookie Usage according to European Laws  (E-Privacy 2002/58/EG)</summary>
+    <description>This Extension adds Info Layers about Site Cookie Usage according to European Laws (E-Privacy 2002/58/EG). Settings allow Users to either 'opt-in' or 'opt-out' to the Acceptance of Cookies.&#xD;
 &#xD;
 Cookie Policy can be set up individually on Store-View Level. Settings include an Option 'Use recommended Settings' that will apply the recommended Settings for the Store's default Country.&#xD;
 &#xD;
-</description>
-    <notes>Initial Release</notes>
+&lt;a href="http://shop.hankeme.de/cookie-policy-compliance" title="download cookie policy compliance at hankeme magento extension store"&gt;The Cookie Policy Compliance Extension can also be downloaded from our Magento Extension Store&lt;/a&gt;. The Extension is provided free of charge, if you like it you're welcome to like us on Facebook: &lt;a href="https://www.facebook.com/HANKEME"&gt;https://www.facebook.com/HANKEME&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&#xD;
+&lt;a href="http://www.hankeme.de"&gt;Contact us for Online Shop customization and Extension Development.&lt;/a&gt;</description>
+    <notes>Updated PHP Compatibility</notes>
     <authors><author><name>Jan Strohmeier</name><user>hankeme_de</user><email>jan.strohmeier@hanke.me</email></author></authors>
-    <date>2014-11-04</date>
-    <time>14:41:41</time>
-    <contents><target name="magecommunity"><dir name="Hankeme"><dir name="Cookiepolicy"><dir name="Block"><file name="Layer.php" hash="338ee38660c32091eb169c6c9d02ca63"/></dir><dir name="Helper"><file name="Data.php" hash="04c7e2ebe836417f76ee0385aff9dffe"/></dir><dir name="Model"><file name="Policytypes.php" hash="c219839b46e1aa35ad8e3b7559c3e469"/></dir><dir name="etc"><file name="config.xml" hash="c9821a05fb9372e1d3adb93c7a68ab49"/><file name="system.xml" hash="2afbe92caaecf9e94f7bdfa34edc74fd"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="hankeme_cookiepolicy.xml" hash="8d0cd02bffaa4b5fb18c1bf45e3f5e01"/></dir><dir name="template"><dir name="hankeme"><dir name="cookiepolicy"><file name="layer.phtml" hash="3bde955262182cc9d8868f51f04bfe70"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Hankeme_Cookiepolicy.xml" hash="66f1f9138978419d897ef802c3b5d399"/></dir></target></contents>
+    <date>2016-05-10</date>
+    <time>15:00:38</time>
+    <contents><target name="magecommunity"><dir name="Hankeme"><dir name="Cookiepolicy"><dir name="Block"><file name="Layer.php" hash="338ee38660c32091eb169c6c9d02ca63"/></dir><dir name="Helper"><file name="Data.php" hash="04c7e2ebe836417f76ee0385aff9dffe"/></dir><dir name="Model"><file name="Policytypes.php" hash="c219839b46e1aa35ad8e3b7559c3e469"/></dir><dir name="etc"><file name="config.xml" hash="f79e21956c1da11a59894dcaf202b5d7"/><file name="system.xml" hash="2afbe92caaecf9e94f7bdfa34edc74fd"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="hankeme"><dir name="cookiepolicy"><file name="layer.phtml" hash="3bde955262182cc9d8868f51f04bfe70"/></dir></dir></dir><dir name="layout"><file name="hankeme_cookiepolicy.xml" hash="8d0cd02bffaa4b5fb18c1bf45e3f5e01"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Hankeme_Cookiepolicy.xml" hash="66f1f9138978419d897ef802c3b5d399"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>5.6.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.2.0</min><max>5.6.20</max></php></required></dependencies>
 </package>
