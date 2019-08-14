@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Hankeme_Cookiepolicy
+ * @authors Jan Strohmeier [jan.strohmeier@hanke.me]
+ * @developers Jan Strohmeier [jan.strohmeier@hanke.me]
+ * @web http://www.hankeme.de
+ * @version 0.1.0
+ * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0) 
+ */
+-->
+<config>
+    <tabs>
+        <hme module="hankeme_cookiepolicy">
+            <label>HankeME</label>
+            <sort_order>105</sort_order>
+        </hme>
+    </tabs>
+    <sections>
+        <cookiepolicy module="hankeme_cookiepolicy" translate="label">
+            <label>Cookie Policy Configuration</label>
+            <sort_order>500</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>hme</tab>
+            <groups>
+                <basic_group translate="label">
+                    <label>Basic Settings</label>
+                    <comment></comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <cookiepolicy_enabled translate="label tooltip comment">
+                            <label>Cookie Policy aktivieren</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+       			    <comment>This will enable a Layer with a customer Message regarding the use of Cookies on your Site</comment>
+                        </cookiepolicy_enabled>
+			<cookiepolicy_policy translate="label tooltip comment">
+                            <label>Cookie Policy</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>hankeme_cookiepolicy/policytypes</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+       			    <comment>This will determine which kind of cookie policy will be used on the site. 'Opt-In' will display an overlay which will only allow the user to use the site if he agrees to your cookie policy. 'Opt-Out' will display a message at the footer of every page that can be closed (this option is most commonly used). 'Hint Once' will display a message at the footer only on first page visit. 'Recommended' will use the settings recommended for the country set up as the store's default country. This setting will default to 'Opt-Out' if no recommendations for your country exist. Please note that using 'Recommended' settings does NOT GUARANTEE any legal compliance.</comment>
+                        </cookiepolicy_policy>
+			<cookiepolicy_text translate="label tooltip comment">
+                            <label>Cookie Policy Custom Text</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+       			    <comment>You can override the default -This Site uses Cookies- Layer Content here. You can also use a local translate.csv in your template to adapt the Text</comment>
+                        </cookiepolicy_text>
+			<cookiepolicy_button_text translate="label tooltip comment">
+                            <label>Cookie Policy Custom Button Text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+       			    <comment>You can override the default Button Text here. You can also use a local translate.csv in your template to adapt the Text</comment>
+                        </cookiepolicy_button_text>
+                    </fields>
+                </basic_group>
+            </groups>
+        </cookiepolicy>
+    </sections>
+</config>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Hankeme_Cookiepolicy
+ * @authors Jan Strohmeier [jan.strohmeier@hanke.me]
+ * @developers Jan Strohmeier [jan.strohmeier@hanke.me]
+ * @web http://www.hankeme.de
+ * @version 0.1.0
+ * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0) 
+ */
+-->
+<config>
+    <modules>
+        <Hankeme_Cookiepolicy>
+            <version>0.1.0</version>
+        </Hankeme_Cookiepolicy>
+    </modules>
+    <global>
+	<helpers>
+            <hankeme_cookiepolicy><class>Hankeme_Cookiepolicy_Helper</class></hankeme_cookiepolicy>
+        </helpers>
+	<blocks>
+           <hankeme_cookiepolicy>
+                <class>Hankeme_Cookiepolicy_Block</class>
+            </hankeme_cookiepolicy>
+        </blocks>
+	<models>
+           <hankeme_cookiepolicy>
+                <class>Hankeme_Cookiepolicy_Model</class>
+            </hankeme_cookiepolicy>
+        </models>
+    </global>
+    <frontend>
+ 	<layout>
+        	<updates>
+        		<hankeme_cookiepolicy>
+        			<file>hankeme_cookiepolicy.xml</file>
+        		</hankeme_cookiepolicy>
+        	</updates>
+        </layout>
+    </frontend>
+	<adminhtml>
+	    <acl>
+		<resources>
+		    <all>
+		        <title>Allow Everything</title>
+		    </all>
+		    <admin>
+		        <children>
+		             <system>
+		                    <children>
+		                        <config>
+		                            <children>
+		                                <cookiepolicy>
+		                                    <title>Administer Hankeme_Cookiepolicy</title>
+		                                </cookiepolicy>
+		                            </children>
+		                        </config>
+		                    </children>
+		                </system>
+		        </children>
+		    </admin>
+		</resources>
+	    </acl>
+	</adminhtml>
+</config> 
