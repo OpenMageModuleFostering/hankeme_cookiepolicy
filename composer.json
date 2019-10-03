@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Hankeme_Cookiepolicy",
+    "name": "OpenMageModuleFostering\/Hankeme_Cookiepolicy",
     "type": "magento-module",
     "license": "GPL-v3",
     "homepage": "",
-    "description": "Adds Info Layers about Site Cookie Usage according to European Laws  (E-Privacy 2002/58/EG)",
+    "description": "Adds Info Layers about Site Cookie Usage according to European Laws  (E-Privacy 2002\/58\/EG)",
     "authors": [
-    {
-        "name": "Jan Strohmeier",
-        "email": "jan.strohmeier@hanke.me"
-    }
-],
+        {
+            "name": "Jan Strohmeier",
+            "email": "jan.strohmeier@hanke.me"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
